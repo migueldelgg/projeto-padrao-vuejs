@@ -1,5 +1,6 @@
 <template>
   <PrimeiroComponente />
+  <p>O dado do componente app é {{ testando }}</p>
 </template>
 
 <script>
@@ -9,6 +10,11 @@ export default {
   name: 'App',
   components: {
     PrimeiroComponente
+  },
+  data() {
+    return {
+      testando: "testando"
+    }
   }
 };
 </script>
