@@ -1,6 +1,6 @@
-<template> 
+<template>
   <div>
-    <h1> Ola vue!</h1>
+    <h1>Ola vue!</h1>
     <p>Meu nome é {{ nome }} e tenho {{ age }} anos.</p>
     <p>e estudo {{ profissao }}</p>
   </div>
@@ -8,14 +8,14 @@
 
 <script>
 export default {
-  name: 'PrimeiroComponente',
+  name: "PrimeiroComponente",
   data() {
     return {
       nome: "Miguel",
       age: "19",
-      profissao: "desenvolvimento web."
-    }
-  }
+      profissao: "desenvolvimento web.",
+    };
+  },
 };
 </script>
 
