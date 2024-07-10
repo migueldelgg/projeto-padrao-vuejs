@@ -8,10 +8,13 @@
     <li>PHP</li>
     <li>Python</li>
   </ul>
-  <p v-show="mostrar_email">Manda uma mensagem para: {{ email }}</p>
   <p>
     para acessar meu portifolio basta clicar<a v-bind:href="meu_link" target="_blank"> aqui</a>
   </p>
+  <div>
+    <button @click="showEmail">{{textoBotao}}</button>
+    <p v-show="mostrar_email">Manda uma mensagem para: {{ email }}</p>
+  </div>
   <Picture/>
 </template>
 <script>
@@ -24,12 +27,23 @@ export default {
     return {
       email: "miguel.delg2004@gmail.com",
       esta_trabalhando: false,
-      mostrar_email: true,
+      mostrar_email: false,
       meu_link: "https://github.com/migueldelgg",
+      textoBotao: 'Mostrar e-mail'
     };
   },
   components: {
     Picture
+  },
+  methods: {
+    showEmail(){
+      this.mostrar_email = !this.mostrar_email
+      if(this.mostrar_email == false){
+        this.textoBotao = 'Mostrar e-mail'
+      }else {
+        this.textoBotao = 'Esconder e-mail'
+      }
+    }
   }
 };
 </script>
