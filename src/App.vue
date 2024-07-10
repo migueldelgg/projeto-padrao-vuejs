@@ -1,5 +1,6 @@
 <template>
   <Header/>
+  <Form/>
   <PrimeiroComponente />
   <LifeCycle />
   <infoPessoa />
@@ -10,6 +11,7 @@ import PrimeiroComponente from "./components/PrimeiroComponente.vue";
 import LifeCycle from "./components/LifeCycle.vue";
 import infoPessoa from "./components/infoPessoa.vue";
 import Header from "./components/Header.vue"
+import Form from "./components/Form.vue"
 
 export default {
   name: "App",
@@ -17,7 +19,8 @@ export default {
     PrimeiroComponente,
     LifeCycle,
     infoPessoa,
-    Header
+    Header,
+    Form
   },
   data() {
     return {
