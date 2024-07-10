@@ -1,26 +1,44 @@
 <template>
+  <Header/>
   <PrimeiroComponente />
-  <LifeCycle/>
-  <infoPessoa/>
-
+  <LifeCycle />
+  <infoPessoa />
 </template>
 
 <script>
-import PrimeiroComponente from './components/PrimeiroComponente.vue';
-import LifeCycle from './components/LifeCycle.vue';
-import infoPessoa from './components/infoPessoa.vue';
+import PrimeiroComponente from "./components/PrimeiroComponente.vue";
+import LifeCycle from "./components/LifeCycle.vue";
+import infoPessoa from "./components/infoPessoa.vue";
+import Header from "./components/Header.vue"
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
     PrimeiroComponente,
     LifeCycle,
-    infoPessoa
+    infoPessoa,
+    Header
   },
   data() {
     return {
-      testando: "testando"
-    }
-  }
+      testando: "testando",
+    };
+  },
 };
 </script>
+
+<style>
+
+  body {
+    background-color: #0D1117;
+    color: aliceblue;
+  }
+
+  a {
+    color: blue;
+  }
+  .teste{
+    background-color: white;
+    color:#0D1117;
+  }
+</style>

@@ -8,7 +8,7 @@
     <li>PHP</li>
     <li>Python</li>
   </ul>
-  <p>
+  <p class="teste">
     para acessar meu portifolio basta clicar<a v-bind:href="meu_link" target="_blank"> aqui</a>
   </p>
   <div>

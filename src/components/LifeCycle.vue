@@ -12,20 +12,20 @@ export default {
   },
   created() {
     setTimeout(() => {
-        this.nome = "Julio";
+      this.nome = "Julio";
     }, 1000);
-    this.lifeCycle()
+    this.lifeCycle();
   },
   mounted() {
     setTimeout(() => {
-        this.nome = "Pedro";
+      this.nome = "Pedro";
     }, 2000);
-    this.lifeCycle()
+    this.lifeCycle();
   },
-  methods:{
-    lifeCycle(){
-      console.log('executou')
-    }
-  }
+  methods: {
+    lifeCycle() {
+      console.log("executou");
+    },
+  },
 };
 </script>
