@@ -3,12 +3,18 @@
     <h1>Ola vue!</h1>
     <p>Meu nome é {{ nome }} e tenho {{ age }} anos.</p>
     <p>e estudo {{ profissao }}</p>
+    <MultiplosEventos/>
   </div>
 </template>
 
 <script>
+import MultiplosEventos from "./MultiplosEventos.vue"
+
 export default {
   name: "PrimeiroComponente",
+  components: {
+    MultiplosEventos
+  },
   data() {
     return {
       nome: "Miguel",
